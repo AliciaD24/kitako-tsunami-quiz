@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html land="eng">
+<html lang="eng">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title> Kitako Tsunami Quiz </title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title> WaniKani Assistant </title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h2>QUIZ!</h2>
-    <div id="question">
-        <h3>Type the question here</h3>
-        <button onclick="wrong()">Option 1</button>
-        <button onclick="right()">Option 2</button>
-        <button onclick="wrong()">Option 3</button>
+  <div id="general-box">
+    <h2>Welcome!</h2>
+    
+    <div id="user-info">
+      <p>Enter your WaniKani API Token below to log in:</p>
     </div>
+
+    <div id="login">
+    <input type="text" id="apiToken" placeholder="Enter API Token">
+    <button onclick="pullApi()">Login</button>
+    </div>
+    
+    <div id="logout">
+      <button onclick="logout()">Logout</button>
+    </div>
+    
+    <div id="level-search">
+      <input type="text" id="levelNumber" placeholder="Enter a level">
+      <button onclick="levelSearch()">Search</button>
+    </div>
+    
+    <div id="item-display"></div>
+    
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
