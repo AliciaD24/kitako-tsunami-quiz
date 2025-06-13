@@ -1,0 +1,7 @@
+function wrong() {
+
+}
+
+function right() {
+    
+}
